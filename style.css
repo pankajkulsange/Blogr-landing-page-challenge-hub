@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Primary  */
+  --Light-red: hsl(356, 100%, 66%);
+  --Very-light-red: hsl(355, 100%, 74%);
+  --Very-dark-blue: hsl(208, 49%, 24%);
+  /* Neutral  */
+  --White: hsl(0, 0%, 100%);
+  --Grayish-blue: hsl(240, 2%, 79%);
+  --Very-dark-grayish-blue: hsl(207, 13%, 34%);
+  --Very-dark-black-blue: hsl(240, 10%, 16%);
+  /* Gradient  */
+  --Very-light-red: hsl(13, 100%, 72%);
+  --Very-red: hsl(353, 100%, 62%);
+  --Very-dark-gray-blue: hsl(237, 17%, 21%);
+  --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
+}
+body {
+  font-family: "Overpass", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+.container {
+  height: 100vh;
+}
+.wrapper {
+  height: 90vh;
+  background-image: linear-gradient(var(--Very-light-red), var(--Very-red));
+  border-radius: 0 0 0 5rem;
+  z-index: -5;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem 0 1rem;
+}
+.menu {
+  margin-top: 1rem;
+}
+.hero {
+  position: absolute;
+  width: 20rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: -6rem;
+}
+.hero-heading {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--White);
+  padding: 2rem 0;
+}
+.hero-subheading {
+  color: var(--White);
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+.buttons {
+  display: flex;
+  margin-top: 4rem;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.start {
+  background-color: var(--White);
+  border: none;
+  font-size: 1rem;
+  color: var(--Very-red);
+  font-weight: 700;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.learn {
+  background-color: transparent;
+  border: 1px solid var(--White);
+  font-size: 1rem;
+  color: var(--White);
+  font-weight: 700;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.section2 {
+  text-align: center;
+}
+.section2-heading {
+  color: var(--Very-dark-black-blue);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.section2-img {
+  margin-top: 2rem;
+}
+.section2-heading2 {
+  display: inline-block;
+  width: 70%;
+  color: var(--Very-dark-blue);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 3rem 0 1rem 0;
+}
+.section2-paragraph {
+  display: inline-block;
+  width: 70%;
+  line-height: 2;
+  margin: 1rem 0 1rem 0;
+}
